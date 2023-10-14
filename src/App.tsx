@@ -32,6 +32,8 @@ function App() {
   }, []);
 
   useEffect(() => {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     let timerId: NodeJS.Timeout | undefined;
     try {
       Notification.requestPermission();
